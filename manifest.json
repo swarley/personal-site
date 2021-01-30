@@ -1,0 +1,48 @@
+{
+    "short_name": "Matthew Carey",
+    "name": "Matthew Carey - Developer",
+    "icons": [
+        {
+            "src": "favicon.ico",
+            "sizes": "128x128 64x64 32x32 24x24 16x16",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "logo128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "logo256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "logo512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": ".",
+    "display": "browser",
+    "theme_color": "#9932cc",
+    "background_color": "#ffffff",
+    "description": "Personal website for Matthew Carey",
+    "shortcuts": [
+        {
+            "name": "About Me",
+            "url": "/about",
+            "description": "A summary of my life and works."
+        },
+        {
+            "name": "Projects",
+            "url": "/projects",
+            "description": "A list of projects that I've worked on."
+        },
+        {
+            "name": "Contact",
+            "url": "/contact",
+            "description": "Get in touch with me."
+        }
+    ]
+}
