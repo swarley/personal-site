@@ -1,14 +1,94 @@
 <main id="project">
     <section class="project-container">
-        <h1 class="project-header">discordrb</h1>
+        <a href="https://github.com/shardlab/discordrb" class="project-link">
+            <h1 class="project-header">discordrb</h1>
+        </a>
         <p>
-            haha rubytaco bad times
+            Discordrb is a gem for accessing the Discord API. I've been involved with the development since 2018 and now act as the
+            project lead and primary developer.
+            <br /><br />
+            I've made quite a few contributions; adding missing features, implementing <i>new</i> features, optimizations, and refactoring existing code.
+            My largest accomplishments with the project so far are <a href="https://github.com/shardlab/discordrb/commit/0f74a1e10def06fa82c34a9d517174a496f00657">improving the websocket
+            efficiency by 300%</a>, <a href="https://github.com/shardlab/discordrb/commit/4b1c9f0c095476e9e75bfd19e0153b44c6f86d73">updating the voice sending functionality</a>, and
+            <a href="https://github.com/shardlab/discordrb/commit/0c814527ab582e6bea31eb17a30f697f42b12149">updating to support multiple user activities</a>.
+            <br /><br />
+            Working as the maintainer has given me valuable experience in leading an OSS community, working with git, and futhering my knowledge of RESTful APIs. It has also given me a very
+            valuable opportunity to socialize with Discord employees and get insight to the design process of a large company.
         </p>
     </section>
     <section class="project-container">
-        <h1 class="project-header">eviler-winrm</h1>
+        <a href="https://github.com/swarley/vox-etf" class="project-link">
+            <h1>vox-etf</h1>
+        </a>
         <p>
-        evil time
+            This was made to enable the use of erlang's ETF format inside of Ruby via a native extension written in C++. It makes use of Discord's erlpack, as well as
+            custom serde methods, to interact with Discord's gateway. It was originally made for my own API wrapper, vox, but will also work for anyone that wishes to use
+            it to create their own custom gateway solution.
+        </p>
+    </section>
+    <section class="project-container">
+        <a href="https://git.sr.ht/~swarley/doc-o-tron" class="project-link">
+            <h1>doc-o-tron</h1>
+        </a>
+        <p>
+            This is the documentation bot for the discordrb channel on the unofficial Discord API server. It's features are as follows:
+            <ul style="padding-left: 10px; list-style: inside;">
+                <li>Search and format YARD documentation</li>
+                <li>Evaluate Ruby, Crystal, and C via a sandboxed eval service</li>
+                <li>Reference github issues/pull requests from the discordrb repository</li>
+                <li>Show the source of a given method</li>
+            </ul>
+            <br /><br />
+            I'm especially proud of this bot, mostly because of how the YARD => Discord formatting works. I wrote custom ERB templates for
+            the YARD generator to use, so it outputs a message formatted specifically for Discord using markdown and ASCII art. The end result is somewhat buggy
+            as I encounter new issues where certain tags don't fit what my template expects, but I enjoy it none the less.
+        </p>
+        </a>
+    </section>
+    <section class="project-container">
+        <a href="https://github.com/swarley/eviler-winrm" class="project-link">
+            <h1>eviler-winrm</h1>
+        </a>
+        <p>
+            This was originally a fork of <a href="https://github.com/Hackplayers/evil-winrm">Hackplayers/evil-winrm</a> because their code was frankly offensively bad.
+            However, I soon realized that it would take much less effort to completely remake their tool from the ground up with a more modular and configurable approach.
+            Things like a configurable and remote rendered prompt, various log modes, tab completion of plugin commands as well as remote directory completion, and enhanced color support
+            are just a small number of reasons why eventually our entire penetration testing team was using eviler-winrm over the more popular tool fairly quickly.
+        </p>
+    </section>
+    <section class="project-container">
+        <a href="https://github.com/swarley/caldera" class="project-link">
+            <h1>caldera</h1>
+        </a>
+        <p>
+            Music bots are a large and important part of the Discord bot community. One of the most popular tools used by these music bots is Lavalink, allowing the voice connection
+            logic to be outside of their application and allow for playing of different media sources such as soundcloud or youtube. This library interfaces with a lavalink server in a generic
+            way that allows discordrb or vox to play music entirely externally for the first time since discordrb's inception.
+        </p>
+    </section>
+    <section class="project-container">
+        <a href="https://github.com/swarley/personal-site" class="project-link">
+            <h1>personal site</h1>
+        </a>
+        <p>
+            This website! I wrote it using the Liquid templating language to render my static assets for hosting on github pages.
+        </p>
+    </section>
+    <section class="project-container">
+        <a href="https://github.com/swarley/snab" class="project-link">
+            <h1>snab</h1>
+        </a>
+        <p>
+            Snab is an intermittent fasting app written in flutter that is still in early development. More information coming soon!
+        </p>
+    </section>
+    <section class="project-container">
+        <a href="https://github.com/swarley/copyup" class="project-link">
+            <h1>copyup</h1>
+        </a>
+        <p>
+            This is a little tool written in Rust that allows a user to quickly download a LICENSE file via its SPDX identifier (e.g: MIT, 0BSD, MPL-1.0, etc).
+            I made it so I would have a reason to use Rust and so I could be lazy about downloading licenses for new projects.
         </p>
     </section>
 </main>

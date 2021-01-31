@@ -2,6 +2,7 @@ require 'rake'
 require 'liquid'
 require 'filewatcher'
 
+Liquid::Template.file_system = Liquid::LocalFileSystem.new(File.expand_path('app/_includes', __dir__))
 VIEWS = Dir.children(File.expand_path('app/views', __dir__))
 VIEW_DATA = VIEWS.map do |fname|
   [
@@ -14,7 +15,6 @@ def compile
   mkdir_p 'out'
   cp_r Dir['public/*'], 'out'
 
-  Liquid::Template.file_system = Liquid::LocalFileSystem.new(File.expand_path('app/_includes', __dir__))
   VIEW_DATA.each do |name, template|
     next if name == 'layout'
 
@@ -35,6 +35,8 @@ end
 
 desc 'Compile on file changes'
 task :watch do
+  compile
+
   Filewatcher.new(['public/**/*', 'app/**/*']).watch do
     puts 'Compiling'
     compile
