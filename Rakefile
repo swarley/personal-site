@@ -19,9 +19,9 @@ def compile
     next if name == 'layout'
 
     page = name == 'home' ? '/' : "/#{name}"
-    fname = name == 'home' ? 'index.html' : "#{name}.html"
-
-    data = VIEW_DATA['layout'].render('content' => VIEW_DATA[name].render, 'page' => page)
+    fname = name == 'home' ? '/index.html' : "/#{name}.html"
+        
+    data = VIEW_DATA['layout'].render('content' => VIEW_DATA[name].render, 'page' => fname)
     File.open(File.join('out', fname), 'w+') do |f|
       f.write(data)
     end
