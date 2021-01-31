@@ -42,6 +42,10 @@ footer {
     font-size: 0.75em;
 }
 
+li::marker {
+    color: darkorchid;
+}
+
 /***
  * navbar components
  ***/
@@ -226,14 +230,21 @@ main#project {
     border-bottom: 1px solid #404040;
 }
 
-.project-header {
+.project-link {
+    text-decoration: none;
+}
+
+.project-link h1 {
     margin-bottom: 15px;
     border-radius: 2px;
     width: max-content;
     font-family: 'Share Tech Mono', monospace;
-    font-size: 2.5em;
+    font-size: 2em;
     border-bottom: 3px solid darkorchid;
+    text-decoration-line: none;
+    color: whitesmoke;
 }
+
 
 /***
  * /contact specific
